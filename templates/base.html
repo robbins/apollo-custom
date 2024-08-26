@@ -9,7 +9,9 @@
 <body>
     <div class="content">
         {% include "partials/nav.html" %}
-
+        {% if section.description%}
+                {{ section.description}}
+        {% endif %}
         {# Post page is the default #}
         {% block main_content %}
             Nothing here?!
